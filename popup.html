@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find it cheaper</title>
+  </head>
+  <style>
+    body {
+      width: 150px;
+      padding: 16px;
+    }
+
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .toggle {
+      display: flex;
+      position: relative;
+      width: 50px;
+      height: 24px;
+      margin: 10px;
+    }
+
+    .toggle input[type="checkbox"] {
+      display: none;
+    }
+
+    .toggle label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .toggle label::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .toggle input[type="checkbox"]:checked + label {
+      background-color: #5bc0de;
+    }
+
+    .toggle input[type="checkbox"]:checked + label::before {
+      transform: translateX(26px);
+    }
+    .side-note {
+      font-size: 10px;
+      color: #afadad;
+      font-style: italic;
+    }
+  </style>
+  <body>
+    <h1>Find it cheaper</h1>
+    <span class="side-note"
+      >For now, it only works for IKEA, but more sites are comming...</span
+    >
+    <div class="toggle-container">
+      <span>Wallapop</span>
+      <div class="toggle">
+        <input type="checkbox" id="toggle-switch-wp" />
+        <label for="toggle-switch-wp"></label>
+      </div>
+    </div>
+    <div class="toggle-container">
+      <span>Milanuncios</span>
+      <div class="toggle">
+        <input type="checkbox" id="toggle-switch-ma" />
+        <label for="toggle-switch-ma"></label>
+      </div>
+    </div>
+    <span class="side-note"
+      >If you like the extension, please leave a review 😊</span
+    >
+    <script src="popup.js"></script>
+  </body>
+</html>
