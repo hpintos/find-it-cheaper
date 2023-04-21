@@ -4,4 +4,4 @@
 
 ## Usage
 
-Go to IKEA, search for you products and activate the extension. An icon of your favourite second hand website will appear so you can search the same product but cheaper ;)
+Go to [IKEA](https://www.ikea.com/es/es/), search for you products and activate the extension. An icon of your favourite second hand website will appear so you can search the same product but cheaper 🤑 😉
