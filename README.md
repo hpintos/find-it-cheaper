@@ -1,6 +1,6 @@
 # Find it Cheaper
 
-> A chrome extension to find IKEA products on second hand sites like Milanuncios and Wallapop (ES)
+> A chrome extension to find [IKEA](https://www.ikea.com/es/es/) products on second hand sites like Milanuncios and Wallapop (ES)
 
 ## Usage
 
